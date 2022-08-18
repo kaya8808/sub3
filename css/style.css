@@ -1,0 +1,89 @@
+/* font-family: Pretendard */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+*{font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;}
+
+/* setting */
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #3c2415;}
+body{font-family: Pretendard; font-size: 18px; color: #3c2415; font-weight: 400;}
+::selection{background: #0d311f; color: #fff;}
+
+/* deco points */
+.points{width: 20px; height: 20px; background: url(../images/point_deco.png) center center no-repeat; display: inline-block; position: absolute; z-index: 10;}
+.lu_deco{top: 0; margin-top: -11px; left: 0; margin-left: -11px;}
+.cu_deco{top: 0; margin-top: -11px; left: 50%; margin-left: -11px;}
+.ru_deco{top: 0; margin-top: -11px;  right: 0; margin-right: -11px;}
+.ld_deco{bottom: 0; margin-bottom: -11px; left: 0; margin-left: -11px;}
+.cd_deco{bottom: 0; margin-bottom: -11px; left: 50%; margin-left: -10px;}
+.rd_deco{bottom: 0; margin-bottom: -11px; right: 0; margin-right: -11px;}
+
+/* header */
+#header{position: fixed; z-index: 99; display: block; top: 0; width: 100%; height: 120px; background: #fff; border-bottom: 2px dotted #3c2415; box-sizing: border-box;}
+.header_inner{width: 1320px; height: 118px; margin: auto; border-left: 2px dotted #3c2415; border-right: 2px dotted #3c2415; position: relative;}
+.logo{float: left; width: 661px; padding: 39px 40px; border-right: 2px dotted #3c2415; box-sizing: border-box;}
+.nav{float: right; background: #f8c7b9; width: 659px; height: 118px;}
+.nav li{float: left; width: 25%;}
+.nav li a{display: block; font-size: 16px; text-align: center; line-height: 118px;}
+.nav li a:hover{color: #0d311f; font-weight: 700;}
+.sub3{color: #0d311f; font-weight: 700;}
+
+/* banner */
+#banner{width: 100%; height: 100%; margin-top: 120px;}
+#banner img{width: 100%; display: block;}
+
+/* inspirations */
+#inspirations{width: 100%; height: 1110px; border-top: 2px dotted #3c2415; position: relative;}
+.deco{width: 1320px; margin: auto; position: relative;}
+#inspirations::before{content: ''; position: absolute; z-index: -1; top: 60px; left: 0; width: 100%; height: 590px; background: #fff8ed;}
+.tab{display: flex; width: 1320px; height: 60px; margin: auto;}
+.tab li{flex: 1; width: 220px; position: relative; text-align: center;}
+.tab li a{display: block; line-height: 60px; font-size: 16px;}
+.solid{position: absolute; left: 0; bottom: 0; width: 100%; height: 5px; background: #f19073; visibility: hidden; opacity: 0; transform: scaleX(0); transition-property: opacity, transform; transition-duration: 0.5s;}
+.tab li.on a{color: #0d311f; font-weight: 700;}
+.tab li.on .solid{transform: scaleX(1); opacity: 1; visibility: visible;}
+.tab li a:hover{color: #0d311f; font-weight: 700;}
+.tab li:hover .solid{transform: scaleX(1); opacity: 1; visibility: visible;}
+.tab li a:focus{color: #0d311f; font-weight: 700;}
+.tab li a:focus .solid{transform: scaleX(1); opacity: 1; visibility: visible;}
+.tab_con{display: none; width: 100%; height: 1050px;}
+.tab_con.on{display: block;}
+
+/* idea */
+.idea{width: 1320px; height: 590px; margin: auto; padding: 70px 40px; box-sizing: border-box;}
+.idea img{display: block; float: left;}
+.text{float: right; width: 620px; height: 450px; padding: 50px 40px; box-sizing: border-box;}
+.text h2{font-size: 30px; color: #967d5f; font-weight: 600; line-height: 45px; margin-bottom: 40px;}
+.text p{font-size: 24px; line-height: 36px;}
+
+/* slide gallery */
+.gallery{width: 100%; height: 460px; overflow: hidden; background: url(../images/pattern_bg.jpg); position: relative;}
+.img_wrap{width: 2230px; height: 300px; margin-top: 90px; position: absolute; top: 30; left: -155px;}
+.slide{float: left; margin-right: 45px;}
+.slide img{display: block;}
+.slide:last-child{margin-right: 0;}
+.slide img:hover{transform: translate3d(0, -60px, 0);}
+.arrow_wrap{width: 1320px; height: 24px; margin: auto; position: absolute; left: 50%; margin-left: -660px; bottom: 30px;}
+.arrow_left{display: block; float: left; width: 15px; height: 24px; background: url(../images/arrow_lf.png); cursor: pointer;}
+.arrow_right{display: block; float: right; width: 15px; height: 24px; background: url(../images/arrow_rg.png); cursor: pointer;}
+.arrow_left:hover{background: url(../images/arrow_lfh.png);}
+.arrow_right:hover{background: url(../images/arrow_rgh.png);}
+
+/* exhibition */
+#exhibition{width: 100%; height: 660px; border-top: 2px dotted #3c2415; box-sizing: border-box;}
+.exhibition_inner{width: 1240px; height: 520px; margin: auto; padding: 68px 40px 70px; position: relative; border-left: 2px dotted #3c2415; border-right: 2px dotted #3c2415;}
+h1{font-size: 48px; color: #0d311f;}
+h3{color: #f19073; font-weight: 500; margin: 12px 0 25px;}
+.exhibition_inner img{display: block; float: left; width: 600px; height: 400px;}
+.margin{margin-left: 40px;}
+
+/* footer */
+#footer{width: 100%; height: 215px; border-top: 2px dotted #3c2415; box-sizing: border-box;}
+.footer_inner{width: 1320px; height: 213px; margin: auto; border-left: 2px dotted #3c2415; border-right: 2px dotted #3c2415; position: relative; font-size: 12px;}
+.info, .link{height: 213px; box-sizing: border-box; padding: 58px 40px 70px;}
+.info{float: left; width: 659px; background-color: #86988f; color: #fff; line-height: 21px;}
+.info p a{color: #fff;}
+.link{float:right; width: 661px; border-left: 2px dotted #3c2415; text-align: right; line-height: 20px;}
+.link img{display: block;}
+.link a{display: inline-block;}
+.f_logo{display: block; float: right; margin-left: 20px;}
